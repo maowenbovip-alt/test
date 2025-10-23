@@ -1,0 +1,55 @@
+server:
+  tomcat:
+    max-connections: 10000
+    accept-count: 100
+    max-threads: 400
+  port: 8081
+spring:
+  redis:
+      host: localhost
+      port: 6379
+  datasource:
+        url: jdbc:mysql://localhost:3306/sheshe?useSSL=false&serverTimezone=UTC
+        username: root
+        password: Admin@123
+        driver-class-name: com.mysql.jdbc.Driver
+#  kafka:
+#    bootstrap-servers: localhost:9092
+#    consumer:
+#      group-id: demo-group
+#      auto-offset-reset: earliest
+#      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#    producer:
+#      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+##  data:
+##    elasticsearch:
+##      client:
+##        elasticsearch:
+##          hosts: http://localhost:9200
+#      username: elastic
+#      password: changeme
+
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+#    show-sql: true
+#
+#  application:
+#    name: spring-test-demo
+
+#dubbo:
+#  application:
+#    name: tiangong-admin
+#  registry:
+#    address: zookeeper://10.21.86.134:2181
+#    timeout: 100000
+#    session: 600000
+#
+#  consumer:
+#    check: false
+
+
